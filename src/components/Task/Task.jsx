@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./Task.css";
 
 export function Task() {
-  const [addTitle, setAddTitle] = useState("");
+  const [addTitle, setAddTitle] = useState(" ");
   const [tasks, setTasks] = useState([]);
 
   function handleCreateTask() {
@@ -39,6 +39,7 @@ export function Task() {
           <input
             type="text"
             placeholder="Adicionar nova task"
+            value={addTitle}
             onChange={(e) => setAddTitle(e.target.value)}
           />
           <button onClick={handleCreateTask}>Adicionar</button>
@@ -46,8 +47,8 @@ export function Task() {
         </div>
         <div className="newTasks">
           {tasks.map((task) => (
-            <div className={task.isComplete ? 'completed' : ''}>
-            <li key={task.id} className='teste'>
+            <div key={task.id} className={task.isComplete ? 'completed' : ''}>
+            <li  className='teste'>
               <div className="teste2">
                   <input type="checkbox" readOnly
                   checked={task.isComplete}
