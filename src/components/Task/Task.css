@@ -1,0 +1,80 @@
+.divTask{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 20rem;
+    min-height: 18rem;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: -4rem ;
+    border-radius: 2rem;
+}
+
+.addTask {
+    display: flex;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.teste3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input {
+    background-color: lightgray;
+    border: none;
+    padding: 1rem;
+}
+
+button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: 0.5;
+    filter: brightness(0.9);
+}
+
+.newTasks {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.newTasks li {
+    list-style-type: none;
+}
+
+.completed {
+    text-decoration:line-through;
+    opacity: 0.6;
+}
+
+.teste {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.teste2 {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
